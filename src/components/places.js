@@ -33,7 +33,7 @@ export function ShowPlace() {
             <div className="container">
               <div>
                 <h2>
-                  {id} - {spotName}
+                 {spotName}
                 </h2>
               </div>
               <div>
