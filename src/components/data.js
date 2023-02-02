@@ -11,7 +11,7 @@ export const data = [
       "https://cdn.glitch.global/821c5059-e399-410a-b9ab-33f0b36b2e75/zilker_park.JPG?v=1671740778748",
 
     address: (
-      <a href="https://zilkergarden.org/" target="_blank">
+      <a href="https://zilkergarden.org/" target="_blank" rel="noreferrer">
         WEBSITE
       </a>
     ),
@@ -31,7 +31,7 @@ export const data = [
       "https://cdn.glitch.global/821c5059-e399-410a-b9ab-33f0b36b2e75/IMG_2656.JPG?v=1671740817556",
 
     address: (
-      <a href="https://innerspacecavern.com/" target="_blank">
+      <a href="https://innerspacecavern.com/" target="_blank" rel="noreferrer">
         WEBSITE
       </a>
     ),
@@ -53,7 +53,7 @@ export const data = [
     address: (
       <a
         href="https://visitcedarparktexas.com/places/brushy-creek-lake-park/"
-        target="_blank"
+        target="_blank" rel="noreferrer"
       >
         WEBSITE
       </a>
@@ -74,7 +74,7 @@ export const data = [
       "https://cdn.glitch.global/821c5059-e399-410a-b9ab-33f0b36b2e75/IMG_2652.JPG?v=1671740904194",
 
     address: (
-      <a href="https://parks.georgetown.org/san-gabriel-park/" target="_blank">
+      <a href="https://parks.georgetown.org/san-gabriel-park/" target="_blank" rel="noreferrer">
         WEBSITE
       </a>
     ),
@@ -96,7 +96,7 @@ export const data = [
     address: (
       <a
         href="https://tpwd.texas.gov/state-parks/mckinney-falls"
-        target="_blank"
+        target="_blank" rel="noreferrer"
       >
         WEBSITE
       </a>
@@ -117,7 +117,7 @@ export const data = [
       "https://cdn.glitch.global/821c5059-e399-410a-b9ab-33f0b36b2e75/IMG_2649.JPG?v=1671740932205",
 
     address: (
-      <a href="https://mountbonnell.com/your-visit/" target="_blank">
+      <a href="https://mountbonnell.com/your-visit/" target="_blank" rel="noreferrer">
         WEBSITE
       </a>
     ),
