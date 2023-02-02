@@ -1,23 +1,52 @@
-.main,
+
+body{
+  margin: 0;
+  padding:0;
+  width: 100vw;
+  background-image: url('blurry-austin.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
 .container_last {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
+
 
 .foodContainer {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 30px;
+   margin-bottom: 30px;
+   justify-content: space-around;
 }
 
 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  flex-grow: 1;
+  flex-basis: 10%;
+  background-color: rgb(165, 209, 178);
+  
+}
+
+.food_card{
+  display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: rgb(165, 209, 178);
-  padding: 20px;
   text-align: center;
-}
+  padding: 20px;
+  }
 
 .title_food_section {
   align-self: center;
@@ -53,6 +82,9 @@ h1,
   background-color: #fffa92;
   padding: 30px;
   margin: 0 auto;
+  align-self: center;
+  text-shadow: -2px 0px 4px rgba(105, 128, 0, 0.94);
+ 
 }
 
 h2 {
@@ -60,6 +92,13 @@ h2 {
   font-size: 24px;
   font-weight: bold;
   color: #0e2c24;
+  align-content: center;
+}
+
+.description{
+  font-size: 18px;
+  margin: 30px 10px;
+  text-align: center;
 }
 
 .showmore {
@@ -104,7 +143,7 @@ a {
 
 
 p {
-  width: 600px;
+  max-width: 500px;
   font-family: 'Barlow', sans-serif;
   font-size: 18px;
   font-weight: bolder;
@@ -199,8 +238,11 @@ p {
 .spotName {
   background-color: #f4e80398;
   border-radius: 10px;
-  padding: 10px 7px;
+  padding: 5px 2px;
+  margin-top: 5px;
   align-self: center;
+  min-width: 200px;
+  
 }
 
 .card {
@@ -209,7 +251,7 @@ p {
   padding: 25px 15px;
   background-color: rgb(165, 209, 178);
   margin: 50px 0;
-  box-shadow: 0 2px 5px #ccc;
+  box-shadow: 0 2px 10px rgb(108, 67, 37);
   text-align: left;
 }
 
@@ -250,8 +292,12 @@ p {
 .bigger {
   font-size: 50px;
   border: none;
-  background-color: white;
   cursor: pointer;
+  background-color: #8edbc9;
+  border-radius: 20px;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
 }
 
 .insta {
@@ -260,12 +306,75 @@ p {
 }
 
 .secont_p {
+  align-self: center;
   font-size: 24px;
   rotate: -10deg;
+  padding: 10px;
 }
 
 .footer {
   background-color: rgb(165, 209, 178);
+  width: 100vw;
+  margin-bottom: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 30px;
+   
 }
+
+.footer_disclaimer {
+  color: #E5E5E5;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+
+.places{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+}
+
+@media only screen and (max-width: 600px){
+
+
+h2 {
+   font-size: 18px;
+   text-align: center;
+   flex-wrap: wrap;
+   max-width: 250px;
+}
+
+h1{
+  font-size: 32px;
+}
+
+.description{
+  font-size: 16px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.foodContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+p{
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+   
+}
+
+
+}
+

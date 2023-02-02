@@ -32,6 +32,7 @@ export function FeedbackSlide() {
         <p className="secont_p">Check another Austin lover's hints!</p>
       </div>
 
+      
       <div className="feedback">
         <button className="bigger" onClick={backButton}>
           ◀️

@@ -24,46 +24,53 @@ export function ShowPlace() {
             : "LIST OF " + places.length + " MOST FABULOUS NATURE PLACES"}
         </h2>
       </div>
+      <div className="main">
+        {places.map((element) => {
+          const { id, spotName, description, image, address, showMore } =
+            element;
 
-      {places.map((element) => {
-        const { id, spotName, description, image, address, showMore } = element;
-
-        return (
-          <div key={id} className="main">
-            <div className="container">
-              <div>
-                <h2>
-                  {id} - {spotName}
-                </h2>
-              </div>
-              <div>
-                <img src={image} alt="place" width="500px" className="places" />
-              </div>
-              <div>
-                <p className="description">
-                  {showMore
-                    ? description
-                    : description.substring(0, 230) + "....."}
-                </p>
-                <button
-                  className="showmore"
-                  onClick={() => showTextClick(element)}
-                >
-                  {showMore ? "Show Less" : "Expand"}
-                </button>
-              </div>
-              <div className="butts">
-                <div className="button-32">{address}</div>
+          return (
+            <div key={id} >
+              <div className="container">
+                
+                  <h2>
+                    {id} - {spotName}
+                  </h2>
+                
                 <div>
-                  <button className="btn_not" onClick={() => removeItem(id)}>
-                    NOT INTERESTED
+                  <img
+                    src={image}
+                    alt="place"
+                    width="500px"
+                    className="places"
+                  />
+                </div>
+                <div className="description">
+                  <p>
+                    {showMore
+                      ? description
+                      : description.substring(0, 230) + "....."}
+                  </p>
+                  <button
+                    className="showmore"
+                    onClick={() => showTextClick(element)}
+                  >
+                    {showMore ? "Show Less" : "Expand"}
                   </button>
                 </div>
-              </div>
-            </div>
-          </div>
-        );
-      })}
+                <div className="butts">
+                  <div className="button-32">{address}</div>
+                  <div>
+                    <button className="btn_not" onClick={() => removeItem(id)}>
+                      NOT INTERESTED
+                    </button>
+                  </div>
+                  </div>
+                </div>
+               </div>
+          );
+        })}
+      </div>
       <div className="delete">
         <button className="delete2" onClick={() => setPLaces([])}>
           Delete All

@@ -6,7 +6,7 @@ import { FeedbackSlide } from "./components/slides";
 function App() {
   return (
     <div>
-      <div>
+      <div className="header">
         <h1>Visit Austin TX</h1>
       </div>
 
@@ -23,7 +23,13 @@ function App() {
       </div>
 
       <div className="footer">
-        <h2>Have a wonderful trip to Austin TX ⭐️</h2>
+      <div>
+        <p>Have a wonderful trip to Austin TX ⭐️</p>
+      </div>
+        <div>
+          <p className="footer_disclaimer">This website created for educational purposes only<br></br> by Xeniya Plakhotnyuk</p>
+        </div>
+        
       </div>
     </div>
   );

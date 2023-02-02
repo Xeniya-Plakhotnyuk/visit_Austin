@@ -32,13 +32,13 @@ function FoodSlides() {
         <p className="secont_p">Try these stunning view spots to eat</p>
       </div>
 
-      <div className="container">
+      <div className="food_card">
         <div>
           <img className="places" src={spotImage} alt="spot" />
         </div>
 
-        <div className="container">
-          <h2 className="spotName">{spotName}</h2>
+        <div className="spotName">
+          <h2 >{spotName}</h2>
         </div>
 
         <div>
