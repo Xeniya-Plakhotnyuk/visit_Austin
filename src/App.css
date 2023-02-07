@@ -1,13 +1,13 @@
-
-body{
+body {
   margin: 0;
-  padding:0;
+  padding: 0;
   width: 100vw;
   background-image: url('blurry-austin.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
-.main{
+
+.main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -23,8 +23,8 @@ body{
 
 .foodContainer {
   display: flex;
-   margin-bottom: 30px;
-   justify-content: space-around;
+  margin-bottom: 30px;
+  justify-content: space-around;
 }
 
 .container {
@@ -36,17 +36,17 @@ body{
   flex-grow: 1;
   flex-basis: 10%;
   background-color: rgb(165, 209, 178);
-  
+
 }
 
-.food_card{
+.food_card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: rgb(165, 209, 178);
   text-align: center;
   padding: 20px;
-  }
+}
 
 .title_food_section {
   align-self: center;
@@ -84,7 +84,7 @@ h1,
   margin: 0 auto;
   align-self: center;
   text-shadow: -2px 0px 4px rgba(105, 128, 0, 0.94);
- 
+
 }
 
 h2 {
@@ -95,7 +95,7 @@ h2 {
   align-content: center;
 }
 
-.description{
+.description {
   font-size: 18px;
   margin: 30px 10px;
   text-align: center;
@@ -242,7 +242,7 @@ p {
   margin-top: 5px;
   align-self: center;
   min-width: 200px;
-  
+
 }
 
 .card {
@@ -319,7 +319,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 30px;
-   
+
 }
 
 .footer_disclaimer {
@@ -329,51 +329,69 @@ p {
 }
 
 
-.places{
+.places {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 60%;
+  max-width: 70%;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
 
 
-h2 {
-   font-size: 18px;
-   text-align: center;
-   flex-wrap: wrap;
-   max-width: 250px;
+  h2 {
+    font-size: 18px;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 250px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 16px;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .foodContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+
+  }
+
+  .circle-img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    width: 80px;
+    height: 80px;
+  }
+
+  .name {
+    font-size: 1em;
+    color: #2d3436;
+    display: flex;
+  }
+  .bigger{
+    font-size: 30px;
+    border-radius: 10px;
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+  }
 }
-
-h1{
-  font-size: 32px;
-}
-
-.description{
-  font-size: 16px;
-  max-width: 300px;
-  text-align: center;
-}
-
-.foodContainer{
-  display: flex;
-  flex-direction: column;
-}
-
-p{
-  font-size: 16px;
-  font-weight: lighter;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
-   
-}
-
-}
-

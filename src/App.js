@@ -23,13 +23,15 @@ function App() {
       </div>
 
       <div className="footer">
-      <div>
-        <p>Have a wonderful trip to Austin TX ⭐️</p>
-      </div>
         <div>
-          <p className="footer_disclaimer">This website created for educational purposes only<br></br> by Xeniya Plakhotnyuk</p>
+          <p>Have a wonderful trip to Austin TX ⭐️</p>
         </div>
-        
+        <div>
+          <p className="footer_disclaimer">
+            This website created for educational purposes only<br></br> by
+            Xeniya Plakhotnyuk
+          </p>
+        </div>
       </div>
     </div>
   );
