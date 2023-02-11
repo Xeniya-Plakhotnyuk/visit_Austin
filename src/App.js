@@ -1,7 +1,7 @@
 import "./App.css";
-import FoodSlides from "./components/food";
-import ShowPlace from "./components/places";
-import { FeedbackSlide } from "./components/slides";
+import FoodSlides from "./components/FoodSlides";
+import ShowPlace from "./components/ShowPlace";
+import { FeedbackSlide } from "./components/FeedBackSlide";
 
 function App() {
   return (
